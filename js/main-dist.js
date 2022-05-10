@@ -1,0 +1,1 @@
+var waypoint=new Waypoint({element:document.getElementsByTagName(".row"),handler:function(){document.querySelector(".notify").classList.add("slide")},offset:-30});

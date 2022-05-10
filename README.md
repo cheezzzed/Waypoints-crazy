@@ -1,2 +1,2 @@
-# Waypoints-crazy
+# Waypoints
  

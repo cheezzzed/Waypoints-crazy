@@ -1,0 +1,194 @@
+
+*{
+	font-family: 'Varela Round', sans-serif;
+	text-decoration: none;
+}
+
+.hero{
+	background: #3acec2;
+}
+
+.hero img{
+	width: 195px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	transition: 200ms
+}
+
+.hero img:hover{
+	transform: scale(1.1);
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+h1{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #093a58;
+	font-size: 20px;
+}
+
+header nav a{
+	padding: 10px;
+	display: block;
+	color: #3acec2;
+	transition: 200ms;
+}
+
+header nav a:hover{
+	transform: scale(1.5);
+}
+
+h1, nav a{
+	font-family: 'Varela Round', sans-serif;
+}
+
+h2{
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+p{
+	padding-bottom: 20px;
+	line-height: 25px;
+}
+
+h3{
+	padding-top: 10px;
+	margin-bottom: 15px;
+	color: #093a58;
+	font-size: 20px;
+}
+
+.hero{
+	text-align: center;
+	margin-top: 10px;
+	color: #ffffff;
+	padding-bottom: 25px;
+}
+
+.row{
+	display: flex;
+	flex-direction: column;
+	margin-top: 45px;
+}
+
+.col{
+	background: #edf4f7;
+	margin: 0px 10px 15px 10px;
+	border-radius: 5px;
+	padding: 20px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+	transition: 500ms;
+}
+
+.col:hover{
+	transform: scale(1.1);
+}
+
+.button{
+	background: #3acec2;
+	padding: 9px;
+	border-radius: 5px;
+	color: #ffffff;
+	transition: 200ms;
+}
+
+.row .col .button:hover{
+	
+	transform: scale(1.1);
+}
+
+footer{
+	background: #d9e4ea;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-family: 'Varela Round', sans-serif;
+}
+
+.notify{
+	
+}
+
+
+@media screen and (min-width: 768px){
+
+
+	nav ul{
+		display: flex;
+		justify-content: center;
+	}
+
+	header nav a{
+		margin-right: 30px;
+	}
+
+	.hero{
+		margin-top: 2px;
+		
+	}
+
+	.hero img{
+		padding: 45px 0px 45px 0px;
+	}
+
+	h2{
+		margin-bottom: 20px;
+	}
+
+	.row{
+		flex-direction: row;
+		margin-bottom: 30px;
+	}
+
+	.col{
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
+
+	.button{
+		margin-top: auto;
+		align-self: flex-start;
+	}
+	
+
+}
+
+
+@media screen and (min-width: 1220px){
+
+
+	header{
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0px 30px;
+	}
+
+	header nav a{
+		margin-top: 10px;
+	}
+
+	.row{
+		max-width: 915px;
+		margin: auto;
+		margin-top: 45px;
+		margin-bottom: 45px;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+

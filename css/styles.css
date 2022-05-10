@@ -12,11 +12,19 @@
 	width: 195px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	transition: 200ms
+	animation-name: spin;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
 }
 
-.hero img:hover{
-	transform: scale(1.1);
+@keyframes spin{
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(90deg);}
+	50% {transform: rotate(180deg);}
+	75% {transform: rotate(360deg);}
+	100% {transform: rotate(0deg);}
 }
 
 header{
@@ -50,11 +58,41 @@ h1, nav a{
 h2{
 	margin-bottom: 10px;
 	font-size: 30px;
+	animation-name: rainbow;
+	animation-duration: 500ms;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
+@keyframes rainbow{
+	0% {color: red;}
+	20% {color: green;}
+	40% {color: orange;}
+	60% {color: yellow;}
+	80% {color: blue;}
+	100% {color: red;}
 }
 
 p{
 	padding-bottom: 20px;
 	line-height: 25px;
+}
+
+.hero p{
+	animation-name: bounce-around;
+	animation-duration: 1s;
+	animation-timing-function: steps(8);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes bounce-around {
+	0% {transform: translate(0px, 0px);}
+	25% {transform: translate(300px, 0px);}
+	50% {transform: translate(300px, 300px);}
+	75% {transform: translate(0px, 300px);}
+	100% {transform: translate(0px, 0px);}
 }
 
 h3{

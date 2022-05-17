@@ -221,7 +221,7 @@ footer{
 	font-family: 'Varela Round', sans-serif;
 }
 
-.slide{
+.notify{
 	animation-name: bounce-around;
 	animation-duration: 1s;
 	animation-timing-function: steps(8);

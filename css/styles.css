@@ -38,6 +38,19 @@ h1{
 	margin-bottom: 20px;
 	color: #093a58;
 	font-size: 20px;
+	animation-name: bounce-around;
+	animation-duration: 1s;
+	animation-timing-function: steps(8);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes bounce-around {
+	0% {transform: translate(0px, 0px);}
+	25% {transform: translate(150px, 0px);}
+	50% {transform: translate(50px, 70px);}
+	75% {transform: translate(0px, 150px);}
+	100% {transform: translate(0px, 0px);}
 }
 
 header nav a{
@@ -122,10 +135,69 @@ h3{
 	padding: 20px;
 	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
 	transition: 500ms;
+	animation-name: crazy;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
 }
 
 .col:hover{
 	transform: scale(1.1);
+}
+
+@keyframes crazy{
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(90deg);}
+	50% {transform: rotate(180deg);}
+	75% {transform: rotate(360deg);}
+	100% {transform: rotate(0deg);}
+}
+
+.welcome{
+	animation-name: welcome;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+}
+
+@keyframes welcome{
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(90deg);}
+	50% {transform: rotate(180deg);}
+	75% {transform: rotate(360deg);}
+	100% {transform: rotate(90deg);}
+}
+.great{
+	animation-name: great;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes great{
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(90deg);}
+	50% {transform: rotate(180deg);}
+	75% {transform: rotate(360deg);}
+	100% {transform: rotate(0deg);}
+}
+.how{
+	animation-name: how;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+
+@keyframes how{
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(90deg);}
+	50% {transform: rotate(180deg);}
+	75% {transform: rotate(360deg);}
+	100% {transform: rotate(45deg);}
 }
 
 .button{
@@ -149,8 +221,20 @@ footer{
 	font-family: 'Varela Round', sans-serif;
 }
 
-.notify{
-	
+.slide{
+	animation-name: bounce-around;
+	animation-duration: 1s;
+	animation-timing-function: steps(8);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes bounce-around {
+	0% {transform: translate(0px, 0px);}
+	25% {transform: translate(300px, 0px);}
+	50% {transform: translate(300px, 300px);}
+	75% {transform: translate(0px, 300px);}
+	100% {transform: translate(0px, 0px);}
 }
 
 

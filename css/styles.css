@@ -231,7 +231,7 @@ footer{
 
 @keyframes bounce-around {
 	0% {transform: translate(0px, 0px);}
-	25% {transform: translate(300px, 0px);}
+	25% {transform: translate(301px, 0px);}
 	50% {transform: translate(300px, 300px);}
 	75% {transform: translate(0px, 300px);}
 	100% {transform: translate(0px, 0px);}
